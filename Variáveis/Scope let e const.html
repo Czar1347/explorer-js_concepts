@@ -1,0 +1,29 @@
+<script>
+    // const e let são locias e só funcionam no escopo onde foi criada
+    // Se a variavel tiver sido declarada foi do escopo e invocada em um escopo mais interno, ele pode subir escopo para encontrala
+    console.log('> existe y antes do bloco? ', y)
+    let y = 1
+    {
+        // let y = 0
+        y = 0
+        console.log('> existe y', y)
+    }
+
+    console.log('> existe y depois do bloco? ', y)
+
+
+    //const não pode ser alterada
+    console.log('> existe x antes do bloco? ', x)
+    const x = 1
+    {
+        let y = 0 //vai funcionar por ser praticamente outra variavel
+        x = 0 // não vai funcionar
+        console.log('> existe y', y)
+    }
+
+    console.log('> existe y depois do bloco? ', y)
+
+
+
+
+</script>
