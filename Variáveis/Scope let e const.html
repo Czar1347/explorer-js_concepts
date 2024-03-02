@@ -1,0 +1,19 @@
+<script>
+
+    //vamos iniciar um bloco
+    {
+        // let x = 0;
+        // console.log(x);
+    }//aqui fechamos o bloco
+
+    //var é global e, também local
+    // Quando a variável é global(var), acontece o HOISTING, que é a elevação de variável var para antes de qualquer tentativa de invocação dela, não é elevado o valor dela.
+    console.log('> existe x antes do bloco', x)
+
+    {
+        var x = 0
+    }
+
+    console.log('> existe x depois do bloco', x)
+
+</script>
