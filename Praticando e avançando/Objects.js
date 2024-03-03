@@ -1,5 +1,6 @@
 // Object
 
+// para declarar um objeto, dentro dele tem propriedades
 const person = {
     name: 'John',
     age: 30,
